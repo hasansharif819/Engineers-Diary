@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "name": "Sharif Hasan",
+        "service": "Web/Software developed",
+        "price": "1500",
+        "img": "https://ibb.co/PzqNKHS"
+    },
+    {
+        "id": 2,
+        "name": "Hasan Sharif",
+        "service": "IT Solutions",
+        "price": "1900",
+        "img": "https://ibb.co/0n0X929"
+    },
+    {
+        "id": 3,
+        "name": "Hasan Shuvro",
+        "service": "Bug Fixing",
+        "price": "900",
+        "img": "https://ibb.co/w0cGxwV"
+    },
+    {
+        "id": 4,
+        "name": "Shuvro Sharif",
+        "service": "JS Developer",
+        "price": "1900",
+        "img": "https://ibb.co/Wx6BcD4"
+    },
+    {
+        "id": 5,
+        "name": "Sharif Hasan Shuvro",
+        "service": "Networking",
+        "price": "2500",
+        "img": "https://ibb.co/1JvCPqs"
+    },
+    {
+        "id": 6,
+        "name": "Shuvro Sharif Hasan",
+        "service": "Data Analysis",
+        "price": "5000",
+        "img": "https://ibb.co/YcYKXqQ"
+    }
+]
