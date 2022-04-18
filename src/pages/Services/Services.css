@@ -1,0 +1,6 @@
+.services{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    grid-gap: 10px;
+  }

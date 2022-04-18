@@ -12,7 +12,8 @@ const Slider = () => {
     setIndex(selectedIndex);
   };
     return (
-        <Carousel activeIndex={index} onSelect={handleSelect}>
+        <div className="container">
+            <Carousel activeIndex={index} onSelect={handleSelect}>
             <Carousel.Item>
                 <img
                     className="d-block w-100"
@@ -20,8 +21,8 @@ const Slider = () => {
                     alt="First slide"
                 />
                 <Carousel.Caption>
-                    <h3>First slide label</h3>
-                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                    <h3>Google Mega Hard Disc</h3>
+                    <p>Googles mega hard disc drive for storing all types of data.</p>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
@@ -32,8 +33,8 @@ const Slider = () => {
                 />
 
                 <Carousel.Caption>
-                    <h3>Second slide label</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <h3>Hard Disc Recovery System</h3>
+                    <p>We always try to recover the internal hard disk as well as external.</p>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
@@ -44,13 +45,14 @@ const Slider = () => {
                 />
 
                 <Carousel.Caption>
-                    <h3>Third slide label</h3>
+                    <h3>Giant Memory Sell</h3>
                     <p>
-                        Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+                        Storing a large amount of data for every millisecond.
                     </p>
                 </Carousel.Caption>
             </Carousel.Item>
         </Carousel>
+        </div>
     );
 };
 
