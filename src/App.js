@@ -4,7 +4,7 @@ import About from './pages/About/About';
 import Home from './pages/Home/Home';
 import Login from './pages/Login/Login/Login';
 import Register from './pages/Login/Register/Register';
-import ServiceDetail from './pages/ServiceDetails/ServiceDetail';
+import ServiceDetail from './pages/ServiceDetail/ServiceDetail';
 import RequireAuth from './pages/Login/RequireAuth/RequireAuth';
 import Header from './shared/Header/Header';
 import NotFound from './shared/NotFound/NotFound';
@@ -21,6 +21,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home></Home>}></Route>
         <Route path="/home" element={<Home></Home>}></Route>
+        <Route path='/serviceDetails' element={<ServiceDetail></ServiceDetail>}></Route>
         <Route path='/blogs' element={<Blogs></Blogs>}></Route>
         <Route path='/services' element={<Services></Services>}></Route>
         <Route path='/service/:serviceId' element={<ServiceDetail></ServiceDetail>}></Route>
