@@ -11,6 +11,7 @@ import NotFound from './shared/NotFound/NotFound';
 import Footer from './shared/Footer/Footer';
 import Checkout from './pages/Checkout/Checkout';
 import Services from './pages/Services/Services';
+import Blogs from './pages/Blogs/Blogs';
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home></Home>}></Route>
         <Route path="/home" element={<Home></Home>}></Route>
+        <Route path='/blogs' element={<Blogs></Blogs>}></Route>
         <Route path='/services' element={<Services></Services>}></Route>
         <Route path='/service/:serviceId' element={<ServiceDetail></ServiceDetail>}></Route>
         <Route path="/about" element={<About></About>}></Route>
