@@ -11,7 +11,7 @@ const Services = () => {
     } ,[])
     return (
         <div className='row'>
-            <h2 className='container text-center text-primary'>Services may Provide: {services.length}</h2>
+            <h2 className='container text-center text-primary'>Provided Service</h2>
             <div className="row">
             {
                 services.map(service => <Service

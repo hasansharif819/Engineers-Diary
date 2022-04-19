@@ -5,8 +5,6 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
 import Loading from '../../../shared/Loading/Loading';
 import SocialLogin from '../SocialLogin/SocialLogin';
-// import { ToastContainer, toast } from 'react-toastify';
-// import 'react-toastify/dist/ReactToastify.css';
 
 const Login = () => {
     const emailRef = useRef('');
@@ -53,10 +51,9 @@ const Login = () => {
         const email = emailRef.current.value;
         if (email) {
             await sendPasswordResetEmail(email);
-            // toast('Sent email');
         }
         else{
-            // toast('please enter your email address');
+            error('please enter your email address');
         }
     }
 
@@ -76,7 +73,8 @@ const Login = () => {
             </Form>
             {errorElement}
             <p><Link to="/register" className='text-primary pe-auto text-decoration-none' onClick={navigateRegister}>Create new account</Link> </p>
-            <p><button className='btn btn-link text-primary pe-auto text-decoration-none' onClick={resetPassword}>Forget Password</button> </p>
+            <p><button className='btn btn-link text-primary pe-auto text-decoration-none' onClick={resetPassword}
+            >Forgot Password</button> </p>
             <SocialLogin></SocialLogin>
             <ToastContainer />
         </div>
